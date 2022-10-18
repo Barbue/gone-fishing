@@ -96,6 +96,11 @@ if(action === 'C'){
         action = prompt(`> `);
     }
 
+    while(action !== "Fish1" && action !== "Fish2" && action !== "Fish3" && action !== "Fish4" && action !== "Fish5" && action !== "F"){
+        console.log(`Please enter [Fish1],[Fish2],[Fish3],[Fish4],[Fish5] or [F] to cancel RR`);
+        action = prompt(`> `);
+    }
+
     if(action === 'Fish1'){
         caughtFish.splice(0,1);
         console.log(`\n You rereleased the chosen fish!\n`);
